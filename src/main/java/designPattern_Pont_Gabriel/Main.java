@@ -1,4 +1,4 @@
-package designPattern_Pont;
+package designPattern_Pont_Gabriel;
 
 /**
  * Classe principale qui instancie des objets couleur et forme

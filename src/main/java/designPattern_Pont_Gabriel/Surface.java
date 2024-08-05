@@ -1,4 +1,4 @@
-package designPattern_Pont;
+package designPattern_Pont_Gabriel;
 
 /**
  * Classe Surface qui fera la forme d'un carre ou d'un cercle

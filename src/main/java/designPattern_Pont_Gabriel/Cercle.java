@@ -1,4 +1,4 @@
-package designPattern_Pont;
+package designPattern_Pont_Gabriel;
 
 /**
  * Classe représentant un cercle et qui hérite de la classe abstraite Forme

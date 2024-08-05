@@ -1,4 +1,4 @@
-package designPattern_Pont;
+package designPattern_Pont_Gabriel;
 
 /**
  * Classe abstraite représentant une forme
