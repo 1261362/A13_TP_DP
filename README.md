@@ -1,39 +1,46 @@
 ```mermaid 
 classDiagram
 direction BT
-class AgressiveBehaviour {
-  + AgressiveBehaviour() 
-  + moveCommand() void
+class Carre {
+  + Carre(Couleur, Surface) 
+  + couleur() void
+  + surface() void
 }
-class DefensiveBehaviour {
-  + DefensiveBehaviour() 
-  + moveCommand() void
+class Cercle {
+  + Cercle(Couleur, Surface) 
+  + couleur() void
+  + surface() void
 }
-class IBehaviour {
-<<Interface>>
-  + moveCommand() void
+class Couleur {
+  + Couleur(String) 
+  - String nom
+  + getNom() String
+}
+class Forme {
+  + Forme(Couleur, Surface) 
+  # Surface surface
+  # Couleur couleur
+  + couleur() void
+  + surface() void
 }
 class Main {
   + Main() 
+  ~ Forme carreBleu
+  ~ Couleur rouge
+  ~ Surface surfaceCercle
+  ~ Couleur bleu
+  ~ Surface surfaceCarre
+  ~ Forme cercleRouge
+  + run() void
   + main(String[]) void
 }
-class NormalBehaviour {
-  + NormalBehaviour() 
-  + moveCommand() void
-}
-class Robot {
-  + Robot(String, IBehaviour) 
-  + Robot(Robot) 
-  + Robot() 
-  + Robot(String) 
-  - IBehaviour behaviour
-  - String name
-  + getBehaviour() IBehaviour
-  + setBehaviour(IBehaviour) void
-  + move() void
+class Surface {
+  + Surface(double) 
+  - double surface
+  + getSurface() double
 }
 
-AgressiveBehaviour  ..>  IBehaviour 
-DefensiveBehaviour  ..>  IBehaviour 
-NormalBehaviour  ..>  IBehaviour
+Carre  -->  Forme 
+Cercle  -->  Forme 
+
 ```
