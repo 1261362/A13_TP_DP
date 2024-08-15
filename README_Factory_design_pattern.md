@@ -47,6 +47,9 @@ En résumé Le modèle de conception Factory Method est facile à comprendre car
 
 Voici les classes et les méthodes utilisées pour illustrer (Mermaid)
 
+![diagram_FactoryDesign](https://github.com/user-attachments/assets/55205268-107e-4257-b3d3-ce37e8c05479)
+
+
 classDiagram
 
 direction BT
