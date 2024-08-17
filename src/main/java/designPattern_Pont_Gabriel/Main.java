@@ -9,10 +9,11 @@ package designPattern_Pont_Gabriel;
 
 public class Main {
 
-    //Créaton des objets couleur
+    //Créaton des objets couleur et indique les couleurs indiquées
     Couleur rouge = new Couleur("Rouge");
     Couleur bleu = new Couleur("Bleu");
-    //Créaton des objets surface
+
+    //Créaton des objets surface et indique les surfaces indiquées
     Surface surfaceCercle = new Surface(30);
     Surface surfaceCarre = new Surface(50);
 
@@ -27,13 +28,18 @@ public class Main {
         cercleRouge.couleur();
         cercleRouge.surface();
 
+        //Laisser un espace entre les deux
         System.out.println("-------------------------");
 
+        //Appel de la methode couleur et surface d'un carre
         carreBleu.couleur();
         carreBleu.surface();
     }
 
     public static void main(String[] args) {
+        /**
+         * Appel de la methode run qui exécutera tout le programme
+         */
         Main main = new Main();
         main.run();
     }

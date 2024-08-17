@@ -10,17 +10,16 @@ public class Couleur {
 
     private String nom;
 
-    // Constructeur avec paramètre
+    /**
+     * Constructeur
+     * @param nom
+     */
     public Couleur(String nom) {
         this.nom = nom;
     }
 
+    //Getter
     public String getNom() {
         return nom;
     }
-
-//    public void couleur(Couleur couleur) {
-//
-//        System.out.println("Couleur : " + couleur.getNom());
-//    }
 }

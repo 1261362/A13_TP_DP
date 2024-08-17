@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"designPattern_Annabel"},{"l":"designPattern_Pont_Gabriel"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"designPattern_Factory_Annabel"},{"l":"designPattern_Pont_Gabriel"}];updateSearchResults();

@@ -13,12 +13,24 @@ public abstract class Forme{
     protected Surface surface;
 
 
-
+    /**
+     * Constructeur forme qui prend en parametre la classe couleur et la surface
+     * @param couleur
+     * @param surface
+     */
     public Forme(Couleur couleur, Surface surface) {
         this.couleur = couleur;
         this.surface = surface;
     }
 
+
+    /**
+     * Méthode qui permet de calculer la surface de la forme
+     */
     public abstract void surface();
+
+    /**
+     * Méthode qui permet de calculer la couleur de la forme
+     */
     public abstract void couleur();
 }

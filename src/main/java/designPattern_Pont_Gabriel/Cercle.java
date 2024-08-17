@@ -10,18 +10,28 @@ package designPattern_Pont_Gabriel;
 public class Cercle extends Forme {
 
 
+    /**
+     * Constructeur qui appele la classe Couleur et la classe Surface
+     * @param couleur
+     * @param surface
+     */
     public Cercle (Couleur couleur,Surface surface) {
         super(couleur,surface);
     }
 
 
-
+    /**
+     * Méthode qui permet de dessiner le cercle et qui indique la couleur demander
+     */
     @Override
     public void couleur() {
         System.out.println("Dessiner un cercle de couleur " + couleur.getNom());
     }
 
 
+    /**
+     * Méthode qui permet de calculer la surface du cercle
+     */
     @Override
     public void surface() {
         System.out.println("Avec une surface de : " + Math.round(surface.getSurface()));
